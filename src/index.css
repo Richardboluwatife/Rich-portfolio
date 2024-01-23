@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+}
+
+.active {
+  color: yellow;
+  border-bottom: 3px solid yellow;
+  padding-bottom: 0.5rem;
+}
+
+.navMenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+
+.ListItem {
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
+}
+
+.mobMenu {
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+}
+
+@media screen and (max-width:720px) {
+  .mobMenu {
+    display: flex;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .desktopMenuBtn {
+    display: none;
+  }
+}
+
+@media screen and (min-width:720px) {
+  .desktopMenuBtn {
+    display: flex;
+  }
+}
+
+body {
+  background: rgb(30, 30, 30);
+  color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.Navbar {
+  background: rgb(30, 30, 30);
+  /* background-color: red; */
+  height: 80px;
+  width: 80%;
+  left: 10%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+/* @media screen and (max-width: 375px) {
+  .Navbar{
+    gap: 20px;
+  }
+} */
+
+.logo {
+  height: 10rem;
+  width: 11rem;
+  padding: 10px;
+  padding-top: 10px;
+}
+
+.logo img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.desktopMenuListItem:hover {
+  color: yellow;
+  padding: 0.5rem;
+  border-bottom: 3px solid yellow;
+}
+
+.desktopMenuImg {
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+
+.desktopMenuBtn {
+  background: white;
+  color: black;
+  border: none;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+}
+
+#Intro {
+  height: calc(100vh - 80px);
+  width: 80%;
+  /* background-color: red; */
+  /* margin-top: 4rem; */
+  /* max-width: 705rem; */
+  margin: 80px auto 0 auto;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* .bg {
+  height: 100vh;
+  width: 125%;
+} */
+
+.bg {
+  width: 100%;
+  /* background-color: red; */
+  height: calc(100vh - 80px);
+}
+
+.bg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 840px) {
+  #Intro {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .introContent {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.introContent {
+  height: 100vh;
+  /* width: 100vw; */
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.introName {
+  color: yellow;
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: 'poppins', sans-serif;
+}
+
+
+@media screen and (max-width:884px) {
+  .introPara{
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+.btn {
+  background: white;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.btnimg {
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+}
+
+@media screen and (max-width:884px) {
+  .bg {
+    right: -20vw;
+  }
+
+  .introContent {
+    font-size: px;
+  }
+
+  .hello {
+    font-size: 35px;
+  }
+
+  .introName {
+    font-size: 40px;
+  }
+
+  #Intro {
+    margin-top: 40px;
+  }
+
+  .btn {
+    font-size: 20px;
+    border: none;
+  }
+
+  .DirectContact{
+    gap: 1px;
+  }
+}
+
+#skills {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skillTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.skillDesc {
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 50rem;
+  padding: 0 2rem;
+}
+
+.SkillBars {
+  /* margin: 1.5rem; */
+  /* width: 100vw; */
+  max-width: 80%;
+  text-align: left;
+}
+
+.SkillBar {
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(50, 50, 50);
+  flex-wrap: wrap;
+}
+
+.SkillBarImg {
+  object-fit: cover;
+  height: 6rem;
+  width: 6rem;
+  margin-right: 2rem;
+  border-radius: 5px;
+}
+
+.SkillBarText>p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+#Works {
+  margin: 0 auto;
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.Workstitle {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.WorksDesc {
+  font-weight: 300;
+  font-size: 1rem;
+  max-width: 45rem;
+}
+
+.WorksImgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 65rem;
+}
+
+.WorksImg {
+  object-fit: cover;
+  height: 20rem;
+  margin: 0.5rem;
+  width: 20rem;
+}
+
+.WorkBtn {
+  margin: 3rem 0;
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: white;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 585px) {
+  .WorksImg {
+    height: 48vw;
+  }
+}
+
+
+#ContactPage {
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContactPageTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.ClientDesc {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.ClientImgs {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ClientImg {
+  object-fit: cover;
+  width: 23%;
+  min-width: 9rem;
+  margin: auto;
+  padding: 0.25rem;
+}
+
+.Clients {
+  padding: 2rem;
+}
+
+.ContactDesc {
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 300;
+}
+
+.ContactForm {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
+}
+
+.name,
+.email,
+.msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: rgb(40, 40, 40);
+  background-color: rgb(40, 40, 40);
+}
+
+.submitbtn {
+  background: white;
+  border: none;
+  padding: 0.75rem 3.5rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link {
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.75rem;
+}
+
+.footer {
+  width: 100vw;
+  height: 4rem;
+  background: rgb(40, 40, 40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: small;
+}
+
+.DirectContact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 300px;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+}
