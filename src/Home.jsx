@@ -4,7 +4,6 @@ import Skills from './Skills'
 import Works from './Works'
 import Contact from './Contact'
 import Footer from './Footer'
-// import Clients from './Clients'
 
 const Home = () => {
     return (
@@ -12,7 +11,6 @@ const Home = () => {
             <Intro />
             <Skills />
             <Works />
-            {/* <Clients/> */}
             <Contact />
             <Footer />
         </div>
