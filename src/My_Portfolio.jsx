@@ -43,22 +43,22 @@ function My_Portfolio() {
         <h2 className='Workstitle'>My Portfolio</h2>
         <span className="WorksDesc">I take pride in paying attention to the smallest details and making sure that my work is pixel perfect. i am exicted to bring my skills and experience to help businesses achieve their goals and create a strong online presence.</span>
         <div className="WorksImgs">
-          <a href='https://twitter.com/Official_Rickid' style={{ display: 'block' }}>
+          <a href='https://richard-grilli.vercel.app/' style={{ display: 'block' }}>
             <img src={Screenshot} alt="" className="WorksImg" />
           </a>
-          <a href='https://twitter.com/Official_Rickid' style={{ display: 'block' }}>
+          <a href='https://richard-grilli.vercel.app/' style={{ display: 'block' }}>
             <img src={Screenshot} alt="" className="WorksImg" />
           </a>
-          <a href='https://twitter.com/Official_Rickid' style={{ display: 'block' }}>
+          <a href='https://richard-grilli.vercel.app/' style={{ display: 'block' }}>
             <img src={Screenshot} alt="" className="WorksImg" />
           </a>
-          <a href='https://twitter.com/Official_Rickid' style={{ display: 'block' }}>
+          <a href='https://richard-grilli.vercel.app/' style={{ display: 'block' }}>
             <img src={Screenshot} alt="" className="WorksImg" />
           </a>
-          <a href='https://twitter.com/Official_Rickid' style={{ display: 'block' }}>
+          <a href='https://richard-grilli.vercel.app/' style={{ display: 'block' }}>
             <img src={Screenshot} alt="" className="WorksImg" />
           </a>
-          <a href='https://twitter.com/Official_Rickid' style={{ display: 'block' }}>
+          <a href='https://richard-grilli.vercel.app/' style={{ display: 'block' }}>
             <img src={Screenshot} alt="" className="WorksImg" />
           </a>
         </div>

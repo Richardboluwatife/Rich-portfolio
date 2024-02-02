@@ -46,7 +46,7 @@ function Contact() {
             emailjs.send('service_hi0k9uq', 'template_e4nvqqm', formData, '0qmTYEoFkvFutAuJF')
                 .then((result) => {
                     console.log(result.text);
-                    alert('Email Sent!');
+                                        alert('Email Sent!');
                     e.target.reset();
                 })
                 .catch((error) => {
